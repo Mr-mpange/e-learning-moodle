@@ -36,7 +36,7 @@ $CFG->smtphosts = 'smtp.hostinger.com:587';
 $CFG->smtpsecure = 'tls';
 $CFG->smtpuser = 'info@mpanges.com';
 $CFG->smtppass = 'Said@1697';
-$CFG->noreplyaddress = 'noreply@mpanges.com';
+$CFG->noreplyaddress = 'info@mpanges.com';  // Use actual email account
 $CFG->smtpmaxbulk = 1;
 
 // Fix SSL certificate path issue

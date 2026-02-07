@@ -1,0 +1,8 @@
+node_modules
+moodledata/
+vendor/
+.DS_Store
+*.log
+config.php
+.idea/
+.vscode/

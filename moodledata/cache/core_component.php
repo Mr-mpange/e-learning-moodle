@@ -607,6 +607,7 @@ $cache = array (
     ),
     'local' => 
     array (
+      'courseselect' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/local/courseselect',
     ),
     'h5plib' => 
     array (
@@ -4890,6 +4891,8 @@ $cache = array (
     'invalid_state_exception' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/lib/classes/exception/invalid_state_exception.php',
     'js_writer' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/lib/classes/output/js_writer.php',
     'lang_string' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/lib/classes/lang_string.php',
+    'local_courseselect\\observer' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/local/courseselect/classes/observer.php',
+    'local_courseselect_observer' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/local/courseselect/classes/observer.php',
     'logstore_database\\helper' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle/public/admin/tool/log/store/database/classes/helper.php',
     'logstore_database\\log\\store' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle/public/admin/tool/log/store/database/classes/log/store.php',
     'logstore_database\\privacy\\provider' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle/public/admin/tool/log/store/database/classes/privacy/provider.php',
@@ -7591,6 +7594,7 @@ $cache = array (
       ),
       'local' => 
       array (
+        'courseselect' => 'C:\\Users\\Administrator\\Desktop\\e-learning-moodle\\public/local/courseselect/lib.php',
       ),
       'h5plib' => 
       array (

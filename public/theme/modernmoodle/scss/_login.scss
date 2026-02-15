@@ -1,0 +1,238 @@
+// Login Page Styles
+.pagelayout-login {
+    #page {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    #page-wrapper {
+        background: transparent;
+    }
+    
+    .loginform {
+        background: #ffffff;
+        border-radius: $radius-xl;
+        box-shadow: $shadow-lg;
+        padding: 48px 40px;
+        max-width: 440px;
+        margin: 0 auto;
+        
+        @media (max-width: $breakpoint-sm) {
+            padding: 32px 24px;
+        }
+    }
+}
+
+.modern-login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.login-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 0;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-card {
+    background: #ffffff;
+    border-radius: $radius-xl;
+    box-shadow: $shadow-lg;
+    padding: 48px 40px;
+    animation: slideUp 0.6s ease-out;
+    
+    @media (max-width: $breakpoint-sm) {
+        padding: 32px 24px;
+    }
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-logo {
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: $gray-900;
+    margin: 0 0 8px 0;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: $gray-500;
+    margin: 0;
+}
+
+// Form styling
+.loginform {
+    .form-group {
+        position: relative;
+        margin-bottom: 24px;
+    }
+    
+    .form-control {
+        width: 100%;
+        padding: 16px 16px 16px 44px;
+        border: 2px solid $gray-200;
+        border-radius: $radius-lg;
+        font-size: 15px;
+        transition: all $transition-medium;
+        background: $gray-50;
+        
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+    }
+    
+    label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-700;
+        margin-bottom: 8px;
+    }
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, $primary-color 0%, $primary-hover 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: $radius-lg;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all $transition-medium;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+// Checkbox styling
+.rememberpass {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    
+    input[type="checkbox"] {
+        margin-right: 8px;
+    }
+    
+    label {
+        font-size: 14px;
+        color: $gray-600;
+        margin: 0;
+    }
+}
+
+// Links
+.forgetpass {
+    text-align: center;
+    margin-top: 16px;
+    
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Alert messages
+.alert {
+    padding: 12px 16px;
+    border-radius: $radius-base;
+    margin-bottom: 20px;
+    font-size: 14px;
+    
+    &.alert-danger {
+        background: #FEE2E2;
+        border: 1px solid #FCA5A5;
+        color: #991B1B;
+    }
+    
+    &.alert-info {
+        background: #DBEAFE;
+        border: 1px solid #93C5FD;
+        color: #1E40AF;
+    }
+}
+
+// Animations
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Login footer
+.login-footer {
+    text-align: center;
+    margin-top: 24px;
+    
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+// Signup link
+.signup-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: $gray-600;
+    
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 600;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

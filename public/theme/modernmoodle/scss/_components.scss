@@ -1,0 +1,378 @@
+// Reusable Components
+
+// Activity Feed
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: $gray-50;
+    border-radius: $radius-md;
+    transition: all $transition-medium;
+    
+    &:hover {
+        background: $gray-100;
+        transform: translateX(4px);
+    }
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    &.assignment {
+        background: rgba(59, 130, 246, 0.1);
+        color: $primary-color;
+    }
+    
+    &.message {
+        background: rgba(139, 92, 246, 0.1);
+        color: $secondary-color;
+    }
+    
+    &.quiz {
+        background: rgba(16, 185, 129, 0.1);
+        color: $success-color;
+    }
+    
+    &.grade {
+        background: rgba(245, 158, 11, 0.1);
+        color: $warning-color;
+    }
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-text {
+    font-size: 14px;
+    color: $gray-700;
+    margin: 0 0 4px 0;
+    line-height: 1.5;
+}
+
+.activity-time {
+    font-size: 12px;
+    color: $gray-400;
+}
+
+// Assignments List
+.assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assignment-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: $gray-50;
+    border: 2px solid $gray-200;
+    border-radius: $radius-lg;
+    transition: all $transition-medium;
+    
+    &:hover {
+        border-color: $primary-color;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    }
+}
+
+.assignment-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, $primary-color 0%, $primary-hover 100%);
+    border-radius: $radius-lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    svg {
+        width: 24px;
+        height: 24px;
+        color: #ffffff;
+    }
+}
+
+.assignment-content {
+    flex: 1;
+}
+
+.assignment-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-900;
+    margin: 0 0 4px 0;
+}
+
+.assignment-course {
+    font-size: 13px;
+    color: $gray-500;
+    margin: 0;
+}
+
+.assignment-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.assignment-due {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: $gray-500;
+    font-weight: 500;
+    
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    &.overdue {
+        color: $error-color;
+    }
+}
+
+// Cards
+.card {
+    background: #ffffff;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-sm;
+    overflow: hidden;
+    transition: all $transition-medium;
+    
+    &:hover {
+        box-shadow: $shadow-base;
+    }
+}
+
+.card-header {
+    padding: 20px;
+    border-bottom: 1px solid $gray-200;
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray-900;
+        margin: 0;
+    }
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 16px 20px;
+    background: $gray-50;
+    border-top: 1px solid $gray-200;
+}
+
+// Badges
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: $radius-full;
+    font-size: 12px;
+    font-weight: 600;
+    
+    &.badge-primary {
+        background: rgba(59, 130, 246, 0.1);
+        color: $primary-color;
+    }
+    
+    &.badge-success {
+        background: rgba(16, 185, 129, 0.1);
+        color: $success-color;
+    }
+    
+    &.badge-warning {
+        background: rgba(245, 158, 11, 0.1);
+        color: $warning-color;
+    }
+    
+    &.badge-danger {
+        background: rgba(239, 68, 68, 0.1);
+        color: $error-color;
+    }
+}
+
+// Dropdown menus
+.dropdown-menu {
+    position: absolute;
+    min-width: 200px;
+    background: #ffffff;
+    border: 1px solid $gray-200;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+    padding: 8px;
+    z-index: $z-index-dropdown;
+    
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 12px;
+        color: $gray-700;
+        text-decoration: none;
+        border-radius: $radius-base;
+        transition: all $transition-base;
+        
+        &:hover {
+            background: $gray-50;
+        }
+        
+        svg {
+            width: 18px;
+            height: 18px;
+            color: $gray-400;
+        }
+    }
+    
+    .dropdown-divider {
+        height: 1px;
+        background: $gray-200;
+        margin: 8px 0;
+    }
+}
+
+// Tooltips
+.tooltip {
+    position: absolute;
+    background: $gray-900;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: $radius-base;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: $z-index-modal;
+    pointer-events: none;
+}
+
+// Loading spinner
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Empty state
+.empty-state {
+    text-align: center;
+    padding: 48px 24px;
+    
+    svg {
+        width: 64px;
+        height: 64px;
+        color: $gray-300;
+        margin-bottom: 16px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray-900;
+        margin: 0 0 8px 0;
+    }
+    
+    p {
+        font-size: 14px;
+        color: $gray-500;
+        margin: 0;
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Utility classes
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-1 { margin-top: $spacing-sm; }
+.mt-2 { margin-top: $spacing-lg; }
+.mt-3 { margin-top: $spacing-2xl; }
+.mt-4 { margin-top: $spacing-3xl; }
+
+.mb-1 { margin-bottom: $spacing-sm; }
+.mb-2 { margin-bottom: $spacing-lg; }
+.mb-3 { margin-bottom: $spacing-2xl; }
+.mb-4 { margin-bottom: $spacing-3xl; }
+
+.p-1 { padding: $spacing-sm; }
+.p-2 { padding: $spacing-lg; }
+.p-3 { padding: $spacing-2xl; }
+.p-4 { padding: $spacing-3xl; }
+
+.d-flex { display: flex; }
+.align-items-center { align-items: center; }
+.justify-content-between { justify-content: space-between; }
+.gap-1 { gap: $spacing-sm; }
+.gap-2 { gap: $spacing-lg; }
+.gap-3 { gap: $spacing-2xl; }

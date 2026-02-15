@@ -1,0 +1,74 @@
+// Modern Moodle Theme Variables
+
+// Color Palette
+$primary-color: #3B82F6 !default;
+$primary-hover: #2563EB !default;
+$primary-dark: #1D4ED8 !default;
+$secondary-color: #8B5CF6 !default;
+$secondary-hover: #7C3AED !default;
+
+// Status Colors
+$success-color: #10B981;
+$warning-color: #F59E0B;
+$error-color: #EF4444;
+$info-color: #3B82F6;
+
+// Neutral Colors
+$gray-50: #F9FAFB;
+$gray-100: #F3F4F6;
+$gray-200: #E5E7EB;
+$gray-300: #D1D5DB;
+$gray-400: #9CA3AF;
+$gray-500: #6B7280;
+$gray-600: #4B5563;
+$gray-700: #374151;
+$gray-800: #1F2937;
+$gray-900: #111827;
+
+// Typography
+$font-family-base: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-size-base: 15px;
+$line-height-base: 1.5;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+$spacing-3xl: 32px;
+$spacing-4xl: 40px;
+
+// Border Radius
+$radius-sm: 4px;
+$radius-base: 8px;
+$radius-md: 10px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+$shadow-base: 0 4px 12px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 10px 40px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 200ms ease;
+$transition-medium: 300ms ease;
+$transition-slow: 500ms ease;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Z-index
+$z-index-dropdown: 900;
+$z-index-sticky: 100;
+$z-index-sidebar: 90;
+$z-index-modal: 1000;
